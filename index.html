@@ -10,22 +10,262 @@
 
   <link rel="canonical" href="https://3э.by" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://3э.by/sitemap.xml" />
-  <link rel="stylesheet" href="src/style/styles.css">
+  <link rel="stylesheet" href="src/style/style.css">
 
   <title>Республиканское унитарное предприятние "3Э"</title>
 </head>
 <body>
 
-  <header>
-
+  <header class="header">
+    <div class="logo">
+      <img src="src/img/logo.svg" alt="logo">
+    </div>
+    <div class="nav-wrapper">
+      <nav class="nav">
+        <ul class="nav__item-wrapper">
+          <li class="nav__item"><a class="nav__link" href="/about">О предприятии</a></li>
+          <li class="nav__item"><a class="nav__link" href="/services">Работы и услуги</a></li>
+          <li class="nav__item"><a class="nav__link" href="/catalog">Каталог продукции</a></li>
+          <li class="nav__item"><a class="nav__link" href="/contacts">Контакты</a></li>
+          <li class="nav__item"><a class="nav__link" href="/appeals ">Обращения граждан</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="service-block">
+      <div class="language-select">
+        <select id="language-select" name="language">
+          <option value="RU">RU</option>
+          <option value="EN">EN</option>
+        </select>
+      </div>
+      <div class="search-container">
+        <button id="search-btn">
+          <img src="src/img/icon-search.svg" alt="search-icon">
+        </button>
+        <input type="text" id="search-input" placeholder="Поиск..." />
+      </div>
+      <div class="fvi">
+        <button id="fvi-btn">
+          <img src="src/img/icon-view.svg" alt="fvi-icon">
+        </button>
+      </div>
+      <div class="phone-dispatcher">
+        <p>Диспетчерская служба</p>
+        <p>+375 (17) 222-22-59</p>
+        <p>+375 (17) 222-22-59</p>
+      </div>
+      <div class="phone-dispatcher">
+        <p>Расчетный отдел:</p>
+        <p>+375 (29) 333-33-33</p>
+      </div> 
+    </div>
+    <div class="feedback-wrapper">
+      <button class="blue-btn feedback-btn">Обратная связь</button>
+    </div>
   </header>
   
   <main>
-
+    <section class="main-screen">
+      <div class="container">
+        <div class="main-screen-wrapper">
+          <h1 class="mait-text"></h1>
+          <p class="sub-text"></p>
+          <a href="/services">Подробнее</a>
+        </div>
+        <div class="advantage">
+          <div class="advantage-item">
+            <img src="src/img/icon-cube.svg" alt="" class="advantage-logo">
+            <div class="advantage-info">
+              <p>1 млн. 687 тыс.кв.м.</p>
+              <p>Общая площадь</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <img src="src/img/icon-web.svg" alt="" class="advantage-logo">
+            <div class="advantage-info">
+              <p>864 зданий</p>
+              <p>На техобслуживании</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <img src="src/img/icon-repair.svg" alt="" class="advantage-logo">
+            <div class="advantage-info">
+              <p>> 77</p>
+              <p>Видов деятельности</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <img src="src/img/icon-truck.svg" alt="" class="advantage-logo">
+            <div class="advantage-info">
+              <p>> 110 единиц</p>
+              <p>Транспортной техники</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-block">
+      <div class="container">
+        <h2>Республиканское унитарное предприятие «ЗЭ»</h2>
+        <p>Предприятие в системе осуществляет комплексное техническое обслуживание
+          объектов недвижимости особой государственной важности, обеспечивает
+          бесперебойную и безаварийную работу, оперативность и
+          высокое качество обслуживания.</p>
+      </div>
+    </section>
+    <section class="sw-hero">
+      <div class="container">
+        <div class="sw-hero-wrapper">
+          <div class="sw-hero__item">
+            <h3>Техническое обслуживание</h3>
+            <p>Эксплуатация и техническое обслуживание зданий и сооружений, систем вентиляции и кондиционирования воздуха, систем
+            пожарной автоматики, видеонаблюдения, контроля и управления доступом и других систем безопасности и другое.</p>
+            <a href="http://" class="blue-btn">Подробнее</a>
+          </div>
+          <div class="sw-hero__item">
+            <h3>Специальные и монтажные работы</h3>
+            <p>Монтаж систем пожарной автоматики, видеонаблюдения, контроля и управления доступом, монтаж и пуско-наладка систем
+            вентиляции и кондиционирования воздуха, ремонтно-аварийные работы, общестроительные работы и другое.</p>
+            <a href="http://" class="white-btn">Подробнее</a>
+          </div>
+          <div class="sw-hero__item">
+            <h3>Производство</h3>
+            <p>Изготовление изделий из ПВХ: окна, двери, перегородки, изготовление изделий из давальческого сырья заказчика,
+            гидроабразивная резка материалов.</p>
+            <a href="http://" class="white-btn">Подробнее</a>
+          </div>
+          <div class="sw-hero__item">
+            <h3>Услуги</h3>
+            <p>Клининг, профилактическая дератизация, дезинсекция, дезинфекция и акарицидная обработка (клеща), озеленение, оказание
+            услуг спецтехникой, аренда недвижимости, услуги по разработке бизнес-планов.</p>
+            <a href="http://" class="blue-btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <p>Последние новости</p>
+        <div class="news__items">
+          <div class="news__item">
+            <p>Любой вид корпусной мебели - дешево</p>
+            <img src="/src/img/cab-furniture-1.jpg" alt="cab-furniture-1">
+            <p>Наше предприятие много лет специализируется на производстве качественной и эргономичной корпусной мебели. Мы
+            изготавливаем изделия только по индивидуальному заказу. Каждая модель неповторима.</p>
+            <p>11.08.2023</p>
+            <a href="" class="blue-btn">Читать</a>
+          </div>
+          <div class="news__item">
+            <p>Любой вид корпусной мебели - дешево</p>
+            <img src="/src/img/cab-furniture-2.jpg" alt="cab-furniture-2">
+            <p>Наше предприятие много лет специализируется на производстве качественной и эргономичной корпусной мебели. Мы
+            изготавливаем изделия только по индивидуальному заказу. Каждая модель неповторима.</p>
+            <p>11.08.2023</p>
+            <a href="" class="blue-btn">Читать</a>
+          </div>
+          <div class="news__item">
+            <p>Любой вид корпусной мебели - дешево</p>
+            <img src="/src/img/cab-furniture-3.jpg" alt="cab-furniture-3">
+            <p>Наше предприятие много лет специализируется на производстве качественной и эргономичной корпусной мебели. Мы
+            изготавливаем изделия только по индивидуальному заказу. Каждая модель неповторима.</p>
+            <p>11.08.2023</p>
+            <a href="" class="blue-btn">Читать</a>
+          </div>
+        </div>
+        <a href="/news">Все новости</a>
+      </div>
+    </section>
+    <section class="parntners">
+      <div class="container">
+        <div class="slider">
+          <div class="slider-track">
+            <img src="logo1.png" alt="Logo 1">
+            <img src="logo2.png" alt="Logo 2">
+            <img src="logo3.png" alt="Logo 3">
+            <img src="logo4.png" alt="Logo 4">
+            <img src="logo5.png" alt="Logo 5">
+            <img src="logo6.png" alt="Logo 6">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="window">
+      <div class="container">
+        <div class="window-wrapper">
+          <h3>Изготовление окон из ПВХ</h3>
+          <p>Элементы остекления балконов и лоджий – ленточные из ПВХ профиля системы «EXPROF» серии S358 класса по толщине стенки А,
+          серии ProWinXS358 класса по толщине стенки В, распашные, откидные, поворотно-откидные, СТБ 1912-2008</p>
+          <a href="http://" class="blue-btn">Подробнее</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    
+  <footer class="footer">
+    <div class="container">
+      <div class="about-nav-wrapper">
+        <div class="about">
+          <img src="src/img/logo.svg" alt="logo">
+          <div class="about-text">
+            <p>Республиканское унитарное предприятие «ЗЭ»</p>
+            <p>Адрес: г. Минск, ул. Мясникова, 56
+              Телефон: + 375 (17) 222-35-12
+              Режим работы : Пн - Пт 8:15 - 17:00, обед 13:00 - 13:45</p>
+          </div>
+          <div class="about-text">
+            <p>Вышестоящая организация - название</p>
+            <p>Адрес: г. Минск, ул. Мясникова, 38
+              Телефон: + 375 (17) 222-35-56
+              Режим работы : Пн - Пт 9:00 - 18:00</p>
+          </div>
+        </div>
+        <div class="nav-wrapper">
+          <nav class="nav">
+            <ul class="nav__item-wrapper">
+              <li class="nav__item"><a class="nav__link" href="/about">О предприятии</a></li>
+              <li class="nav__item"><a class="nav__link" href="/services">Работы и услуги</a></li>
+              <li class="nav__item"><a class="nav__link" href="/catalog">Каталог продукции</a></li>
+              <li class="nav__item"><a class="nav__link" href="/contacts">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link" href="/appeals ">Обращения граждан</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="important">
+        <div class="container">
+          <div class="important-wrapper">
+            <div class="important-item">
+              <a href="https://president.gov.by/be/statebodies/kiraynictva-spravami-prjezidjenta-rjespubliki-belarus">
+                <img src="src/img/gerb.svg" alt="">
+                <p>Кіраўніцтва справамі Прэзідэнта Рэспублікі Беларусь</p>
+              </a>
+            </div>
+            <div class="important-item">
+              <a href="https://president.gov.by/be/president">
+                <img src="src/img/gerb.svg" alt="">
+                <p>Прэзідэнт
+                Рэспублікі Беларусь</p>
+              </a>
+            </div>
+            <div class="important-item">
+              <a href="https://pravo.by/">
+                <img src="src/img/gerb.svg" alt="">
+                <p>Прававы партал
+                pravo.by</p>
+              </a>
+            </div>
+            <div class="important-item">
+              <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/">
+                <img src="src/img/portal-ocenki.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Государственное предприятие «ЗЭ»</p>
+    </div>
   </footer>
 
   <script type="application/ld+json">
@@ -36,5 +276,7 @@
     "url": "https://3э.by"
   }
   </script>
+  <script src="src/js/script.js" defer></script>
+
 </body>
 </html>
