@@ -6,3 +6,8 @@ document.getElementById("search-btn").addEventListener("click", function () {
     }
 });
 
+
+function toggleMenu() {
+  document.querySelector(".nav__item-wrapper").classList.toggle("active");
+  document.querySelector(".burger-menu").classList.toggle("active");
+}

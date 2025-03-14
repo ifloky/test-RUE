@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --blue: #00357F;
+  --light-blue: #DBECFF;
+  --white: #fefefe;
+  --gray: #B4BAC7;
+  --gray-text: #718096;
+  --light-gray: #EBEBF0;
+  --black: #171717;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
+.blue-btn {
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px 25px;
+  color: var(--white) !important;
+  font-size: 16px;
+  border: none;
+  max-width: fit-content;
+  padding-right: 53px;
+  position: relative;
+}
+
+.blue-btn::after {
+  content: url(/src/img/arrow-btn.svg);
+  position: absolute;
+  right: 28px;
+}
+
+.blue-btn:hover,
+.white-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+.white-btn {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px 25px;
+  color: var(--black);
+  display: flex;
+  font-size: 16px;
+  border: none;
+  max-width: fit-content;
+  padding-right: 53px;
+  position: relative;
+}
+
+.white-btn::after {
+  content: url(/src/img/arrow-btn-dark.svg);
+  position: absolute;
+  right: 28px;
+}

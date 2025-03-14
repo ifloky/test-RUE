@@ -1,85 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-:root {
-  --blue: #00357F;
-  --light-blue: #DBECFF;
-  --white: #fefefe;
-  --gray: #B4BAC7;
-  --gray-text: #718096;
-  --light-gray: #EBEBF0;
-  --black: #171717;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  color: var(--black);
-}
-
-a {
-  text-decoration: none;
-}
-
-.blue-btn {
-  background-color: var(--blue);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  padding: 10px 25px;
-  color: var(--white);
-  display: flex;
-  font-size: 16px;
-  border: none;
-  max-width: fit-content;
-  padding-right: 53px;
-  position: relative;
-}
-
-.blue-btn::after {
-  content: url(/src/img/arrow-btn.svg);
-  position: absolute;
-  top: 28px;
-  right: 28px;
-}
-
-.white-btn {
-  background-color: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  padding: 10px 25px;
-  color: var(--black);
-  display: flex;
-  font-size: 16px;
-  border: none;
-  max-width: fit-content;
-  padding-right: 53px;
-  position: relative;
-}
-
-.white-btn::after {
-  content: url(/src/img/arrow-btn-dark.svg);
-  position: absolute;
-  top: 28px;
-  right: 28px;
-}
-
-
-
 body { 
   background-image: url(../img/background.svg);
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .header {
   max-width: 1920px;
+  margin: 0 auto;
   padding: 26px 80px;
   display: flex;
   height: 126px;
+}
+
+.header * {
   color: var(--gray-text);
 }
 
@@ -104,18 +37,19 @@ body {
   height: 100%;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .nav-wrapper {
   height: 100%;
   display: flex;
   align-items: center;
-  position: relative;
-  top: 7px;
   margin-left: 58px;
 }
 
-.nav-wrapper *{
-  color: var(----gray-text);
-  font-size: 16;
+.header .nav-wrapper *{
+  font-size: 16px;
   letter-spacing: -0.835px;
 }
 
@@ -123,6 +57,8 @@ body {
   height: 100%;
   display: flex;
   gap: 2.61vw;
+  position: relative;
+  top: 7px;
 }
 
 .nav__item {
@@ -222,6 +158,12 @@ select::-ms-expand {
   background-color: transparent;
 }
 
+.fvi-btn:hover {
+  cursor: pointer;
+  transition: .3s;
+  transform: scale(1.15);
+}
+
 .phone-dispatcher {
   position: relative;
   left: 46px;
@@ -267,7 +209,8 @@ select::-ms-expand {
 .feedback-btn {
   position: relative;
   top: 8px;
-  padding-right: 25px;
+  padding: 10px 24px;
+  min-width: 162px;
 }
 
 .feedback-btn::after {
@@ -348,10 +291,14 @@ h1 {
 
 .advantage-info p:nth-child(1) {
   color: var(--blue);
-  font-size: 26px;
+  font-size: 32px;
   font-weight: bold;
   letter-spacing: -1.5px;
   line-height: 44px;
+}
+
+.advantage-item:nth-child(1) p:nth-child(1) {
+  font-size: 26px;
 }
 
 .advantage-info p:nth-child(2) {
@@ -359,14 +306,14 @@ h1 {
 } 
 
 .about-block {
-  margin-top: 75px;
+  margin-top: 78px;
   text-align: center;
   padding-left: 10px;
 }
 
 .about-block h2 {
   font-size: 32px;
-  letter-spacing: -1px;
+  letter-spacing: 0.1px;
   color: var(--blue);
   font-weight: 400;
 }
@@ -374,7 +321,7 @@ h1 {
 .about-block p {
   margin-top: 34px;
   font-size: 32px;
-  letter-spacing: -0.1px;
+  letter-spacing: 0.3px;
   line-height: 50px;
   font-weight: 600;
   padding:0 60px;
@@ -534,7 +481,6 @@ h1 {
 
 .slider-track {
   display: flex;
-  gap: px;
   padding: 0 10px;
   width: 2000px;
 }
@@ -601,12 +547,15 @@ h1 {
 .about {
   display: flex;
   align-items: flex-start;
-  justify-content: stretch;
 }
 
 .about img{
   margin-left: 5px;
   margin-right: 3%;
+}
+
+.about-text-wrapper {
+  display: flex;
 }
 
 .about .about-text p {
@@ -623,11 +572,11 @@ h1 {
 }
 
 .about .about-text:nth-child(2) {
-  margin-right: 7%;
+  margin-left: 94px;
 }
 
 .about .nav-wrapper {
-  margin-left: 15%;
+  margin-left: 16.5%;
   margin-top: -10px;
 }
 
@@ -638,9 +587,15 @@ h1 {
 }
 
 .about .nav__item {
-  height: 36px;
+  height: 37px;
   font-weight: 600;
   font-size: 20px;
+  letter-spacing: 3px;
+  line-height: 37px;
+}
+
+.about .nav__item a{
+  letter-spacing: 0px;
 }
 
 .important-wrapper {

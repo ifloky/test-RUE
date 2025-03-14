@@ -8,9 +8,15 @@
   <meta name="keywords" content="техническое обслуживание, ремонтно-строительные и отделочные работы, малярные работы" />
   <meta name="robots" content="index, follow" />
 
+  <link type="image/x-icon" href="/src/img/logo.svg" rel="shortcut icon">
+  <link type="Image/x-icon" href="/src/img/logo.svg" rel="icon">
   <link rel="canonical" href="https://3э.by" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://3э.by/sitemap.xml" />
+
+  <link rel="stylesheet" href="src/style/main.css">
   <link rel="stylesheet" href="src/style/style.css">
+  <link rel="stylesheet" href="src/style/1920-900.css">
+  <link rel="stylesheet" href="src/style/900-320.css">
 
   <title>Республиканское унитарное предприятние "3Э"</title>
 </head>
@@ -59,6 +65,12 @@
         <p>+375 (29) 333-33-33</p>
       </div> 
     </div>
+    <button class="burger-menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <div class="feedback-wrapper">
       <button class="blue-btn feedback-btn">Обратная связь</button>
     </div>
@@ -204,17 +216,19 @@
       <div class="about-nav-wrapper">
         <div class="about">
           <img src="src/img/logo.svg" alt="logo">
-          <div class="about-text">
-            <p>Республиканское унитарное предприятие «ЗЭ»</p>
-            <p>Адрес: г. Минск, ул. Мясникова, 56</p>
-            <p>Телефон: + 375 (17) 222-35-12</p>
-            <p>Режим работы : Пн - Пт 8:15 - 17:00, обед 13:00 - 13:45</p>
-          </div>
-          <div class="about-text">
-            <p>Вышестоящая организация - название</p>
-            <p>Адрес: г. Минск, ул. Мясникова, 38</p>
-            <p>Телефон: + 375 (17) 222-35-56</p>
-            <p>Режим работы : Пн - Пт 9:00 - 18:00</p>
+          <div class="about-text-wrapper">
+            <div class="about-text">
+              <p>Республиканское унитарное предприятие «ЗЭ»</p>
+              <p>Адрес: г. Минск, ул. Мясникова, 56</p>
+              <p>Телефон: + 375 (17) 222-35-12</p>
+              <p>Режим работы : Пн - Пт 8:15 - 17:00, обед 13:00 - 13:45</p>
+            </div>
+            <div class="about-text">
+              <p>Вышестоящая организация - название</p>
+              <p>Адрес: г. Минск, ул. Мясникова, 38</p>
+              <p>Телефон: + 375 (17) 222-35-56</p>
+              <p>Режим работы : Пн - Пт 9:00 - 18:00</p>
+            </div>
           </div>
           <div class="nav-wrapper">
             <nav class="nav">
