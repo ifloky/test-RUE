@@ -20,10 +20,20 @@
     top: 46px;
   }
 
+  #language-select {
+    background-color: transparent;
+  }
+
   .search-container {
     margin-left: 0;
     position: relative;
     left: 20px;
+  }
+
+  .search-container input {
+    position: relative;
+    z-index: 3;
+    right: 0;
   }
 
   .fvi {
