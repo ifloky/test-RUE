@@ -112,7 +112,7 @@
 
   .sw-hero {
     margin-top: 50px;
-    padding-left: 5px;
+    padding-left: 0;
   }
 
   .sw-hero__item {
@@ -154,7 +154,7 @@
 
   .news {
     margin-top: 60px;
-    margin-left: 14px;
+    margin-left: 0px;
   }
 
   .news .container>p {
@@ -379,7 +379,7 @@
 
   .news {
     margin-top: 60px;
-    margin-left: 14px;
+    margin-left: 0px;
   }
 
   .news .container>p {

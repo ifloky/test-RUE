@@ -1,7 +1,7 @@
-body { 
+html { 
   background-image: url(../img/background.svg);
   background-size: cover;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .header {
@@ -477,6 +477,7 @@ h1 {
 
 .parntners {
   margin-top: 80px;
+  overflow-x: hidden !important;
 }
 
 .slider-track {
@@ -542,6 +543,7 @@ h1 {
 
 .footer { 
   padding-top: 80px;
+  overflow-x: hidden !important;
 }
 
 .about {

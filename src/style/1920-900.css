@@ -102,6 +102,7 @@
   .main-screen-wrapper {
     margin-top: 0px;
     height: 425px;
+    max-width: 98%;
   }
 
   .container {
@@ -138,6 +139,7 @@
     flex-wrap: wrap;
     margin-top: 30px;
     gap: 1.8vw;
+    padding-left: 0;
   }
 
   .advantage-item {
@@ -163,7 +165,7 @@
 
   .sw-hero {
     margin-top: 65px;
-    padding-left: 10px;
+    padding-left: 0px;
   }
 
   .sw-hero__item {
@@ -204,7 +206,7 @@
 
   .news {
     margin-top: 56px;
-    margin-left: 12px;
+    margin-left: 0;
   }
 
   .news .container>p {
